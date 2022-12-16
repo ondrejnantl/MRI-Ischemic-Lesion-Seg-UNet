@@ -13,6 +13,8 @@
 
 * Text této práce je také obsahem repozitáře - Ondrej_Nantl_SP.pdf - pouze česky.
 
+* Pro spuštění kódu z tohoto repozitáře je nutné mít nainstalované knihovny PyTorch, nibabel, numpy, matplotlib, tqdm.
+
 * Pro použití modelů (soubory s příponou .pb) je nutné je načíst pomocí torch.load.
 
 * Kód využitý pro trénink a testování modelů je převážně obsažen v Jupyter Noteboocích ATLAStrain3D a ATLAStrain2D.
@@ -29,6 +31,8 @@
   University of Technology.
 
 * Text of the thesis is also a part of this repository - Ondrej_Nantl_SP.pdf - only in Czech.
+
+* For running code from this repository you need to install PyTorch, nibabel, numpy, matplotlib, tqdm.
 
 * For usage the models (files with .pb suffix) shall be loaded using torch.load.
 
