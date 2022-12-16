@@ -13,7 +13,7 @@
 
 * Text této práce je také obsahem repozitáře - Ondrej_Nantl_SP.pdf - pouze česky.
 
-* Pro použití modelů (soubory s příponou .pb) je nutné jej načíst pomocí torch.load.
+* Pro použití modelů (soubory s příponou .pb) je nutné je načíst pomocí torch.load.
 
 * Kód využitý pro trénink a testování modelů je převážně obsažen v Jupyter Noteboocích ATLAStrain3D a ATLAStrain2D.
 
