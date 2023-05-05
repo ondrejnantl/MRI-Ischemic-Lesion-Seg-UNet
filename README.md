@@ -8,16 +8,32 @@
   
 * Pro tento projekt byla využita data z datasetu ATLAS R2.0 [1].
 
-* Tento projekt byl vytvořen jako semestrální práce na Fakultě elektrotechniky a komunikačních technologií na Vysokém
+* Tento projekt byl vytvořen jako diplomová práce na Fakultě elektrotechniky a komunikačních technologií na Vysokém
   učení technickém v Brně. 
 
-* Text této práce je také obsahem repozitáře - Ondrej_Nantl_SP.pdf - pouze česky.
+* Text této práce je také obsahem repozitáře - Ondrej_Nantl_DP.pdf - pouze česky.
 
-* Pro použití modelů (soubory s příponou .pb) je nutné jej načíst pomocí torch.load.
+* Navržené natrénované modely je možné stáhnout zde: dodat odkaz
 
-* Kód využitý pro trénink a testování modelů je převážně obsažen v Jupyter Noteboocích ATLAStrain3D a ATLAStrain2D.
+* Pro použití vlastních navržených modelů (soubory s příponou .pb) je určen skript inference volatelný přes terminál. 
+  Bližší informace k volání jsou dostupné při zavolání python inference.py -h v terminálu.
 
-* Architektury navržených modelů jsou patrné z jejich .py skriptů - unet, unet3d, resunet a res3dunet.
+* Modely navržené s využitím nnUNet lze použít po extrahování standardním postupem pro inferenci uvedenou v dokumentaci
+  nnUNet.
+
+* Kód využitý pro trénink a testování modelů je převážně obsažen ve skriptech trainMSD a trainResMSD.
+
+* Architektury navržených modelů jsou patrné z jejich .py skriptů - unet3d a res3dunet.
+
+* Další skripty obsahují kód pro optimalizaci hyperparametrů - optimalization and optimalizationRes.
+
+* Výpočet výkonnostních metrik provádí skript evalMetrics.
+
+* Dále repozitář obsahuje skripty pro vykreslení grafů a ukázek segmentací - compareParameters, createBoxplots,
+  plotAllNets, plotAndSaveMetrics, scatterPlots.
+
+* Repozitář také obsahuje skripty s podpůrnými kódy - BIDS2MSD, convertPreds, cropAndResampData, loaders, 
+  loss_fcns, transforms.
 
 ## EN
 * This repository was created for storing code created in Python using PyTorch used for segmentation of ischemic 
@@ -25,15 +41,28 @@
   
 * This project was created using data from ATLAS R2.0 dataset [1].
 
-* This project was created as a bachelor thesis at the Faculty of Electrical Engineering and Communication at Brno
+* This project was created as a diploma thesis at the Faculty of Electrical Engineering and Communication at Brno
   University of Technology.
 
-* Text of the thesis is also a part of this repository - Ondrej_Nantl_SP.pdf - only in Czech.
+* Text of the thesis is also a part of this repository - Ondrej_Nantl_DP.pdf - only in Czech.
 
-* For usage the models (files with .pb suffix) shall be loaded using torch.load.
+* Created trained models can be downloaded from: add link
 
-* Code used for training and testing of the models is mainly contained in Jupyter Notebooks ATLAStrain3D and ATLAStrain2D.
+* For usage the own created models (files with .pb suffix) there is a script inference callable from terminal. 
+  For more information run python inference.py -h in terminal.
 
-* Architectures of developed models are apparent from their .py skripts - unet, unet3d, resunet a res3dunet.
+* Code used for training and testing of the models is mainly contained in scripts trainMSD a trainResMSD.
+
+* Architectures of developed models are apparent from their .py skripts - unet3d and res3dunet.
+
+* Other scripts contains code for optimalization of hyperparameters - optimalization and optimalizationRes.
+
+* The evaluation is performed using script evalMetrics.
+
+* Further more the repository contains scripts for plotting performance plots a examples of 
+  segmentation - compareParameters, createBoxplots, plotAllNets, plotAndSaveMetrics, scatterPlots.
+
+* There are also scripts with supplementary code - BIDS2MSD, convertPreds, cropAndResampData, loaders, 
+  loss_fcns, transforms. 
 --------
 [1] LIEW, Sook-Lei, Bethany P. LO, Miranda R. DONNELLY, et al. A large, curated, open-source stroke neuroimaging dataset to improve lesion segmentation algorithms. Scientific Data. 2022, 9(1). ISSN 2052-4463. Available at: https://doi.org/10.1038/s41597-022-01401-7
