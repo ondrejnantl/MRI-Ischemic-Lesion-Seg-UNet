@@ -15,7 +15,7 @@
 
 * Navržené natrénované modely je možné stáhnout zde: dodat odkaz
 
-* Pro spuštění kódu z tohoto repozitáře je nutné mít nainstalované knihovny PyTorch, nibabel, numpy, matplotlib, tqdm.
+* Pro spuštění kódů z tohoto repozitáře je nutné mít nainstalované knihovny podle requirements.txt.
 
 * Pro použití vlastních navržených modelů (soubory s příponou .pb) je určen skript inference volatelný přes terminál. 
   Bližší informace k volání jsou dostupné při zavolání python inference.py -h v terminálu.
@@ -50,7 +50,7 @@
 
 * Created trained models can be downloaded from: add link
 
-* For running code from this repository you need to install PyTorch, nibabel, numpy, matplotlib, tqdm.
+* For running all code from this repository you need to install libraries listed in requirements.txt.
 
 * For usage the own created models (files with .pb suffix) there is a script inference callable from terminal. 
   For more information run python inference.py -h in terminal.
