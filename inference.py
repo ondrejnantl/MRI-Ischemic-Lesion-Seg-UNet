@@ -8,7 +8,11 @@ import argparse
 from unet3d import UNet3D
 
 def inference(pathToData,pathToNets,outPath,device):
-
+    # inputs
+    # pathToData - path to data for inference
+    # pathToNets - path to models for running inference - all in one folder
+    # outPath - path to folder for storing predictions
+    # device - device for running inference - cpu or cuda
     
     # getting the list of scans for inference
     scans = sorted(os.listdir(pathToData))
@@ -49,8 +53,8 @@ def inference(pathToData,pathToNets,outPath,device):
 if __name__ == '__main__':
     # create parser for input arguments
     parser = argparse.ArgumentParser(prog='inference',description='Run inference of stroke lesion segmentation model using trained models (excluding nnUNet models)')
-    parser.add_argument('-pd',help='path to the data for inference',dest="pathToData",required=True)
-    parser.add_argument('-pn',help='path to the nets for inference',dest="pathToNets",required=True)
+    parser.add_argument('-pd',help='path to the data for inference (all shall be in this folder, no subfolders)',dest="pathToData",required=True)
+    parser.add_argument('-pn',help='path to the nets for inference (all shall be in this folder, no subfolders)',dest="pathToNets",required=True)
     parser.add_argument('-po',help='path to store the predictions',dest="outPath",required=True)
     parser.add_argument('-d',choices=["cpu","cuda"],default='cpu',help='device to use for inference',dest="torchDevice",required=True)
 

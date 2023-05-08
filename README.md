@@ -55,6 +55,9 @@
 * For usage the own created models (files with .pb suffix) there is a script inference callable from terminal. 
   For more information run python inference.py -h in terminal.
 
+* Models created using nnUNet can be used after extraction from the .zip archive using standard inference procedure 
+  described in nnUNet documentation.
+
 * Code used for training and testing of the models is mainly contained in scripts trainMSD a trainResMSD.
 
 * Architectures of developed models are apparent from their .py skripts - unet3d and res3dunet.
